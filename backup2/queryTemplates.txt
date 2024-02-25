@@ -1,0 +1,14 @@
+INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
+VALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway');
+
+ALTER TABLE Table_Name
+ADD UNIQUE (Column_Name);
+
+
+
+
+CREATE TABLE your_table (
+    doctorID INT AUTO_INCREMENT,
+    doctorName VARCHAR(255) NOT NULL,
+    UNIQUE (doctorID,doctorName)
+);
